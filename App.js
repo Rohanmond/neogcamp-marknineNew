@@ -105,6 +105,7 @@ export default function App() {
       >
         Movie Recomendation App
       </h1>
+      <h3>This app clusters movies based on genre</h3>
 
       {genre.map((item) => {
         return (
@@ -138,7 +139,10 @@ export default function App() {
                 margin: "1rem 6rem"
               }}
             >
-              {item[0]}
+              <span style={{ fontFamily: "sans-serif", fontWeight: "bolder" }}>
+                {" "}
+                {item[0]}
+              </span>
               <div style={{ border: "1px solid" }}>{item[1]}</div>
               <div style={{ border: "1px solid" }}>{item[2]}</div>
             </li>
